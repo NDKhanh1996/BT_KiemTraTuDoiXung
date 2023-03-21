@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(w) {
+        if(w.length < 2){
+            return true
+        }else if (w[0] !== w[w.length - 1]){
+            return false
+        }else {
+            return check(w.slice(1, w.length - 1))
+        }
+    }
+
+  if(check('asdffdsa')){
+      document.write('co')
+  }else{
+      document.write('k')
+  }
+</script>
+</body>
+</html>
